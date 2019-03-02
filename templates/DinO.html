@@ -42,8 +42,14 @@
 
 <div class="wrapper">
   <div class="container">
-    <input type="text" class="input" placeholder="Search Restaurants">
-    <!-- <script src="{{url_for('static', filename='search.js')}}"></script> -->
+
+    <form action="search">
+      <input type="text" class="input" placeholder="Search Cities" autocomplete="on" formaction="https://developers.zomato.com/api/v2.1/categories">
+      <!-- <input type="submit"> -->
+    </form>
+
+    <!-- <input type="text" class="input" placeholder="Search Restaurants" autocomplete="on" formaction="https://developers.zomato.com/api/v2.1/categories"> -->
+
     <i class="fa fa-search" aria-hidden="true"></i>
   </div>
 </div>
