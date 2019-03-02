@@ -5,8 +5,15 @@
 
 body{
   background: url(../img/intro-bg.jpg) center center / cover scroll no-repeat;
+  /*opacity:30%;*/
   /*background-color: #e5e5e5;*/
   /*background: #F2F6D3;*/
+}
+
+.outerwrapper
+{
+  background-color: rgba(220,20,60,0.0765);
+  height: 100vh;
 }
 
 .overlay {
@@ -33,7 +40,7 @@ body{
 }
 
 .shadow{
-  box-shadow: 0 0 50px rgba(0,0,0,0.5);
+  box-shadow: 0 0 50px rgba(0,0,0,0.9);
 }
 
 .input{
