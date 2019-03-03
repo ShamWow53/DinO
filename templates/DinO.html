@@ -7,7 +7,7 @@
 <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}"> -->
-
+<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 <style>
   body {font-family: 'Courgette', cursive;}
   .w3-row img {margin-bottom: -8px}
@@ -37,24 +37,41 @@
 </div>
 
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- <nav role="navigation">
+<ul>
+  <li><a href="#">City:</a></li>
+    <ul>
+      <li><a value="6777" href="#">Rolla</li>
+      <li><a value="844" href="#">St. Louis</li>
+      <li><a value="280" href="#">New York City</li>
+      <li><a value="850" href="#">Springfield</li>
+    </ul>
+</ul>
+</nav> -->
 
-<select id="City">
-  <option value="6777">Rolla</option>
-  <option value="844">St. Louis</option>
-</select>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="wrap">
+  <div class="containers">
+    <select id="City">
+      <option value="\0"><b>City:</b></option>
+      <option value="6777">Rolla</option>
+      <option value="844">St. Louis</option>
+      <option value="280">New York City</option>
+      <option value="850">Springfield</option>
+    </select>
+  </div>
+</div>
 
 <div class="wrapper">
   <div class="container">
-    <!-- <form action="search"> -->
-      <input type="text" class="input" placeholder="Search Cities" autocomplete="on" formaction="https://developers.zomato.com/api/v2.1/categories" id="mySearch">
-    <!-- </form> -->
+      <input type="text" class="input" placeholder="Search Cuisines" autocomplete="off" formaction="https://developers.zomato.com/api/v2.1/categories" id="mySearch">
     <i class="fa fa-search" aria-hidden="true"></i>
   </div>
 </div>
 
-<div id="data">
-
+<div class="positioning">
+  <div id="data">
+  </div>
 </div>
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
@@ -65,7 +82,6 @@
 
 
 </body>
-
 </html>
 
 
